@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+<link rel="website icon" href="webicon.png"/>
+    <title>IceBear - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24cb257742.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container" id="header-container">
+            <nav>
+                <img src="logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#aboutMe"> About </a></li>
+                    <li><a href="#myServices"> Services </a></li>
+                    <li><a href="#myWorks"> Portfolio </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fa fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <!-- Div for key binding  -->
+
+            <!-- Key binding end  -->
+            <div class="header-text">
+                <h1>Hello, I'm <span>Ankan</span><br> from  <span id="india">India</span></h1>
+                <p id="typewriter"></p>
+            </div>
+        </div>
+    </div>
+    <button id="topButton" onclick="scrollToTop()"> <i class="fa-solid fa-up-long"></i> </button>
+    <!------------------------ About  ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img1.jpg" alt="image of Ice Bear">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" id="aboutMe"> About Me </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, pariatur. Consequatur provident perferendis magnam nihil qui. Nobis necessitatibus cum nulla nam assumenda velit ipsa aperiam facilis. Architecto laudantium voluptatibus ut neque, enim sunt officiis omnis aut unde. Commodi, voluptatum iure sapiente vero sunt labore fugit. Harum recusandae itaque a? Adipisci, repellat. Voluptatum ipsum a suscipit vitae, unde est modi quos inventore! Ad ducimus excepturi quas deserunt nobis reiciendis enim maxime in culpa. Quibusdam tenetur eligendi facilis dolorum pariatur delectus veritatis obcaecati accusamus corrupti ratione corporis a, nesciunt impedit fugiat asperiores quod dolores minus? Maiores, amet aperiam optio adipisci assumenda tempora.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Android / iOS apps</li>
+                            <li><span>Freelancer</span><br>Microsoft Office works</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            <li><span>2011</span><br>HSc from A.P.C Kolkata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services-------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title" id="myServices">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id facilis temporibus quas, exercitationem, suscipit doloribus, ea aut voluptate iste iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ------------------------Portfolio------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" id="myWorks"> My Works </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" alt="image of work 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, eaque.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="image of work 2">
+                    <div class="layer">
+                        <h3>Musical App</h3>
+                        <p>The app connects you to the Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, eaque.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg" alt="image of work 3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, eaque.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      <!-- -----------------Contact------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane spinner"></i><a href="mailto:royalgamer8743@gmail.com" target="_blank"> contact@gmail.com</a></p>
+                    <p><i class="fa-brands fa-discord spinner"></i><a href="mailto:royalgamer8743@gmail.com" target="_blank">1032917165</a></p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <a href="myCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="backend.js" name="submit-to-google-sheet">
+                        <input type="text" id="inputName" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="inputEmail" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="inputMessage" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2" id="submitButton">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Ice.Byte - Made with <i class="fas fa-heart"></i> by Ice Bear</p>
+        </div>
+       </div>
+    <script src="script.js"></script>
+</body>
+</html>
